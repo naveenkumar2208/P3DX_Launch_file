@@ -1,0 +1,24 @@
+<launch>
+	<node pkg = "rosaria" type = "RosAria" name = "RosAria">
+		<param name="port" value="/dev/ttyS0" type="string"/>
+        <remap from="RosAria/cmd_vel" to="cmd_vel"/>
+	</node>
+
+	<!-- <node pkg="rpi_rosaria_robot" type="mykey_publisher.py" name="keyboard_driver" output="screen"/> -->
+        <!-- <node pkg="rpi_rosaria_robot" type="key_publisher.py" name="key_publisher"/> -->
+        <!-- <node pkg="rpi_rosaria_robot" type="key_subscriber.py" name="key_subscriber"/> -->
+	<!-- <node pkg="rpi_rosaria_robot" type="teleop" name="RosAria_interface" output="screen"/> -->
+	<!-- <node pkg="rpi_rosaria_robot" type="keys_to_twist.py" name="keys_to_twist"/> -->
+	<!-- <node pkg="usb_cam" type="usb_cam_node" name="usb_cam"/> -->
+  	<!-- <node name="camera1" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    		<param name="video_device" value="/dev/video0" />
+    		<param name="image_width" value="640" />
+    		<param name="image_height" value="480" />
+    		<param name="pixel_format" value="yuyv" />
+    		<param name="camera_frame_id" value="usb_cam" />
+    		<param name="io_method" value="mmap"/>
+  	</node> -->
+        
+
+
+</launch>
